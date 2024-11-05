@@ -1,0 +1,65 @@
+/* General Reset and Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0C1B2A; /* Deep, oceanic blue */
+    color: #d9d9d9;
+}
+
+.spiritual-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Deep Background Overlay for Night */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 70%, rgba(0, 34, 64, 0.6), rgba(0, 0, 0, 0.9));
+    z-index: -1;
+}
+
+/* Quote Card Styling for Night */
+.quote-card {
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #1E3D5A; /* Muted, deep blue */
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 24px rgba(0, 50, 80, 0.5);
+}
+
+.quote-text {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #A9CCE3; /* Light, oceanic blue */
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    font-size: 1.2em;
+    color: #D1E0EB; /* Soft grey-blue */
+    margin-top: 0;
+}
+
+/* Author Image Styling */
+.author-image {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 50, 80, 0.3);
+}

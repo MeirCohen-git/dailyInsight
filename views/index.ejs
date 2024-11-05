@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <% if (locals.time) { %>
+        <% if (!time.isDay) { %>
+            <link rel="stylesheet" href="night.css">
+            <% } %>
+                <% } %>
+                    <title>Daily Spiritual Insight</title>
+</head>
+
+<body class="spiritual-container">
+    <div class="background-overlay"></div>
+    <div class="quote-card">
+        <% if(locals.data) { %>
+            <p class="quote-text">"<%= data.text %>"</p>
+            <p class="quote-author">— <%= data.byName %>
+            </p>
+            <img src="<%= data.byImage %>" alt="Image of <%= data.byName %>" class="author-image">
+            <% } %>
+    </div>
+</body>
+
+</html>
